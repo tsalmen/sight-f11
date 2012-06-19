@@ -318,6 +318,15 @@ class GetConnected extends WP_Widget {
                     <?php endif; ?>
                     <!-- /500px -->
 
+                    <!-- Linkedin -->
+                    <?php if ( get_option('linkedin_url') ) : ?>
+                    <div class="getconnected_linkedin">
+                    <a href="<?php echo get_option('linkedin_url'); ?>">Linkedin</a>
+                    <span><?php echo get_option('linkedin_text'); ?></span>
+                    </div>
+                    <?php endif; ?>
+                    <!-- /Linkedin -->
+
                     <!-- Behance -->
                     <?php if ( get_option('behance_url') ) : ?>
                     <div class="getconnected_behance">
@@ -385,6 +394,7 @@ class GetConnected extends WP_Widget {
         update_option('fb_url', $_POST['fb_url']);
         update_option('flickr_url', $_POST['flickr_url']);
         update_option('500px_url', $_POST['500px_url']);
+        update_option('linkedin_url', $_POST['linkedin_url']);
         update_option('behance_url', $_POST['behance_url']);
         update_option('delicious_url', $_POST['delicious_url']);
         update_option('stumbleupon_url', $_POST['stumbleupon_url']);
@@ -395,6 +405,7 @@ class GetConnected extends WP_Widget {
         update_option('fb_text', $_POST['fb_text']);
         update_option('flickr_text', $_POST['flickr_text']);
         update_option('500px_text', $_POST['500px_text']);
+        update_option('linkedin_text', $_POST['linkedin_text']);
         update_option('behance_text', $_POST['behance_text']);
         update_option('delicious_text', $_POST['delicious_text']);
         update_option('stumbleupon_text', $_POST['stumbleupon_text']);
@@ -469,7 +480,17 @@ class GetConnected extends WP_Widget {
                     <input type="text" name="500px_text" id="500px_text" class="widefat" value="<?php echo get_option('500px_text'); ?>"/>
                 </p>
             </div>
-
+			
+            <div style="margin-bottom: 5px;">
+                <a href="javascript: void(0);" class="social_title" style="font-size: 13px; display: block; margin-bottom: 5px;">Linkedin</a>
+                <p class="social_options">
+                    <label for="linkedin_url">Profile url:</label>
+                    <input type="text" name="linkedin_url" id="linkedin_url" class="widefat" value="<?php echo get_option('linkedin_url'); ?>"/>
+                    <label for="500px_url">Description:</label>
+                    <input type="text" name="linkedin_text" id="linkedin_text" class="widefat" value="<?php echo get_option('linkedin_text'); ?>"/>
+                </p>
+            </div>
+            
             <div style="margin-bottom: 5px;">
                 <a href="javascript: void(0);" class="social_title" style="font-size: 13px; display: block; margin-bottom: 5px;">Behance</a>
                 <p class="social_options">

@@ -15,15 +15,17 @@ Changelog
  - Added 500px option to Sight Social Links widget
  - Renamed Flickr option in Sight Social Links widget
  - Added option for custom background image (fixed in place)
+ - Highlights entire menu cell on mouseover (not just those with submenus)
+ - Increased size of site title image
 
-TODO: highlight entire menu cell on mouseover (not just those with submenus)
 TODO: set minimum width for menu cells
 TODO: make default page layout option work
 TODO: adjust designed by link
-TODO: increase size of site title image
+
 TODO: change fonts?
 TODO: change li format (increase indent, spacing)
 TODO: options for background image (scale, tile, not fixed etc)
+TODO: mobile version of site
 
 */
 
@@ -53,8 +55,8 @@ body {font: 62.5% Georgia, Geneva, "Times New Roman", times; background: #27292a
 
 .header {height: 158px; overflow: hidden; padding-right: 30px;}
 
-.logo {width: 290px; height: 128px; padding: 18px 0 12px 30px; overflow: hidden; float: left;}
-.logo img {max-height: 128px; max-width: 290px;}
+.logo {width: 490px; height: 128px; padding: 18px 0 12px 30px; overflow: hidden; float: left;}
+.logo img {max-height: 128px; max-width: 490px;}
 
 .site-description {width: 290px; height: 111px; padding: 35px 30px 0; float: left; overflow: hidden;}
 .site-description .textwidget {font-size: 11px; color: #656363; line-height: 1.3;}
@@ -76,7 +78,7 @@ body {font: 62.5% Georgia, Geneva, "Times New Roman", times; background: #27292a
 .dd {height: 48px;}
 .dd li {float: left; display: block; border-left: 1px solid #d9d9d9; text-align: center; font-size: 13px; text-transform: uppercase;}
 .dd li:hover {background:#000;}
-.dd li a {color: #000; text-decoration: none; display: block; padding-top: 18px; margin: 0 14px; white-space: nowrap;}
+.dd li a {color: #000; text-decoration: none; display: block; padding-top: 18px; padding-bottom: 10px; margin: 0 14px; white-space: nowrap;}
 .dd li a:hover {color: #fff; text-decoration: underline;}
 .dd li ul {position: absolute; padding: 8px 0 10px; visibility: hidden; background: #000; z-index: 100;}
 .dd li ul li {float: none; border: none; font-size: 11px; text-align: left; margin: 5px 0; padding: 0 8px;}
@@ -312,6 +314,7 @@ p#cancel-comment-reply {float: right; line-height: 28px; margin: 0;}
 .getconnected_fb a {background: url("images/getconnected_fb.png") 0 2px no-repeat;}
 .getconnected_flickr a {background: url("images/getconnected_flickr.png") 0 2px no-repeat;}
 .getconnected_500px a {background: url("images/getconnected_500px.png") 0 2px no-repeat;}
+.getconnected_linkedin a {background: url("images/getconnected_linkedin.png") 0 2px no-repeat;}
 .getconnected_behance a {background: url("images/getconnected_behance.png") 0 2px no-repeat;}
 .getconnected_delicious a {background: url("images/getconnected_delicious.png") 0 2px no-repeat;}
 .getconnected_stumbleupon a {background: url("images/getconnected_stumbleupon.png") 0 2px no-repeat;}
